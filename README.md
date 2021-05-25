@@ -5,4 +5,6 @@ An open source  website full of resources for oxygen cylinders, plasma donors et
 React js, node js, mongodb 
 
 
-Backend - Django 
+Backend - Django
+-----------------
+The secret key has been changed. Set up a django environment, before running the code.
