@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <title>Injektors</title>
+    
+    <link rel="stylesheet" href="styles.css"   />
+     
+</head>
+
+<body>
+    <div id="__next">
+        <div class="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-1100">
+            <section class="mb-20 mx-auto">
+                <nav
+                    class="flex bg-gray-200 dark:bg-gray-1200 items-center justify-between px-5 py-2 fixed top-0 left-0  w-full  z-50">
+                    <div class="flex items-center m-3 cursor-pointer md:hidden">
+                        <div class="w-5 h-5"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 w-3 text-gray-600" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                                </path>
+                            </svg></div>
+                    </div><a href="/" class="flex items-center my-2 mx-1 xs:m-3"><svg viewBox="0 0 399 399"
+                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                            stroke-linejoin="round" stroke-miterlimit="2" height="40">
+                            <path fill="none" d="M0 0h398.519v398.519H0z"></path>
+                            <path
+                                d="M313.973 218.967v-46.068c0-11.041 6.897-16.662 14.224-16.662 7.255 0 14.438 5.492 14.438 16.676v58.586c0 11.413-1.032 16.905-8.23 29.996-11.37 20.661-32.118 54.586-32.118 95.493h-71.734s-8.015-25.221-10.94-42.183c-5.893-34.083 1.806-49.769 15.901-64.308 14.654-15.098 21.909-22.238 28.619-29.178 15.5-16.073 36.591 2.782 24.289 17.521-6.71 8.044-23.285 25.852-27.257 31.129-3.843 5.104 3.312 12.288 8.947 6.409 8.216-8.589 27.315-29.867 33.91-37.538 6.352-7.413 9.951-11.886 9.951-19.873zm-229.441 0v-46.068c0-11.041-6.854-16.662-14.181-16.662-7.241 0-14.467 5.492-14.467 16.676v58.586c0 11.413 1.032 16.905 8.23 29.996 11.37 20.661 32.146 49.625 32.146 95.493h71.735s8.015-25.221 10.94-42.183c5.893-34.083-1.807-49.769-15.901-64.308-14.654-15.098-21.909-22.238-28.619-29.178-15.5-16.073-36.592 2.782-24.289 17.521 6.71 8.044 23.285 25.852 27.257 31.129 3.842 5.104-3.313 12.288-8.947 6.409-8.216-8.589-27.315-29.867-33.91-37.538-6.352-7.413-9.994-11.886-9.994-19.873zm114.72-177.436c-34.928 51.604-57.353 83.879-57.353 115.237 0 31.401 25.651 56.823 57.353 56.823s57.353-25.422 57.353-56.823c0-31.358-22.425-63.633-57.353-115.237zm-.2 36.706c3.369 5.191 7.369 14.252 7.369 23.802 0 28.017-28.676 32.605-28.676 15.557 0-11.715 14.252-28.992 21.307-39.359z"
+                                fill="none" class="stroke-current text-gray-900 dark:text-gray-50" stroke-width="9.5">
+                            </path>
+                        </svg>
+                        <h1 class="ml-1 uppercase font-black text-3xl text-gray-900 dark:text-gray-100 hidden xs:block">
+                            Injektors</h1>
+                    </a>
+                    <div class="flex-1 flex items-center justify-end">
+                        <div class="items-center justify-end hidden md:flex"><a href="/learn"
+                                class="flex items-center text-right text-gray-900 dark:text-gray-300 px-2 py-2 md:p-0 mx-5 md:mx-6 md:pb-1 hover:text-gray-700 "><span
+                                    class="fill-current text-gray-900 dark:text-gray-300 mr-2 ml-auto "><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 4.707C9.062 2.877 4.584 2.14 0 2v17.714c3.937.12 7.795.681 10.667 1.995a3.2 3.2 0 002.667 0c2.872-1.314 6.729-1.875 10.666-1.995V2c-4.584.14-9.062.877-12 2.707zM2 17.811V4.107c5.157.389 7.527 1.463 9 2.334v13.168c-1.525-.546-4.716-1.505-9-1.798zm20 0c-4.283.293-7.475 1.252-9 1.799V6.439c1.453-.861 3.83-1.942 9-2.332v13.704z">
+                                        </path>
+                                    </svg></span><span>Learn</span></a><a href="/campaigns"
+                                class="flex items-center text-right text-gray-900 dark:text-gray-300 px-2 py-2 md:p-0 mx-5 md:mx-6 md:pb-1 hover:text-gray-700 "><span
+                                    class="fill-current text-gray-900 dark:text-gray-300 mr-2 ml-auto "><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 4.248C8.852-1.154 0 .423 0 7.192 0 11.853 5.571 16.619 12 23c6.43-6.381 12-11.147 12-15.808C24 .4 15.125-1.114 12 4.248z">
+                                        </path>
+                                    </svg></span><span>Donate Now</span></a><a href="/partners"
+                                class="flex items-center text-right text-gray-900 dark:text-gray-300 px-2 py-2 md:p-0 mx-5 md:mx-6 md:pb-1 hover:text-gray-700 "><span
+                                    class="fill-current text-gray-900 dark:text-gray-300 mr-2 ml-auto "><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                        <path
+                                            d="M11.329 19.6a.939.939 0 01-1.317.202.941.941 0 01-.202-1.315l1.077-1.456a.94.94 0 011.315-.199.934.934 0 01.201 1.313L11.329 19.6zm-.825-2.839a.942.942 0 10-1.518-1.113l-1.073 1.449a.942.942 0 001.517 1.115l1.074-1.451zm-1.9-1.388a.94.94 0 00-1.517-1.113l-1.083 1.461a.93.93 0 00.209 1.304.93.93 0 001.308-.19l1.083-1.462zm-1.898-1.386a.938.938 0 00-.203-1.315.94.94 0 00-1.315.201l-1.075 1.451a.94.94 0 101.517 1.113l1.076-1.45zM24 5.549s-1.555.301-2.667.479c-2.146.344-4.144-.416-6.361-1.562-.445-.229-.957-.466-1.458-.466-.461 0-.913.209-1.292.639-1.366 1.547-2.16 2.915-3.785 3.864-.801.468.14 1.934 1.86 1.331.878-.308 1.736-.895 2.706-1.677.762-.615 1.22-.524 1.879.135 1.238 1.238 5.404 5.351 5.404 5.351 1.317-.812 2.422-1.312 3.713-1.792V5.549zM13.476 18.211c-.158.459-.618 1.001-.953 1.455.297.235.608.334.882.334.717 0 1.188-.671.542-1.318l-.471-.471zm6.506-3.463c-1.07-1.055-4.732-4.667-5.803-5.713a.472.472 0 00-.608-.044c-.639.464-2.082 1.485-2.944 1.788-1.685.59-3.115-.222-3.422-1.359a1.547 1.547 0 01.727-1.781c1.008-.589 1.657-1.375 2.456-2.363-.695-.539-1.35-.732-1.991-.732-1.706 0-3.317 1.366-5.336 1.231C1.688 5.685 0 5.372 0 5.372v6.333c1.476.321 2.455.464 3.92 1.199l.462-.624a1.943 1.943 0 013.425.596c.951 0 1.667.602 1.898 1.387a1.932 1.932 0 011.897 1.385c1.171 0 2.017.92 1.981 2.007l1.168 1.168a.941.941 0 101.331-1.332l-1.686-1.687c-.22-.22.113-.553.333-.333l2.032 2.033a.94.94 0 101.331-1.331l-2.501-2.502c-.221-.218.113-.553.333-.333l2.7 2.701a.94.94 0 001.331 0 .933.933 0 00.027-1.291z">
+                                        </path>
+                                    </svg></span><span>Partner With Us</span></a><a href="/data"
+                                class="flex items-center text-right text-gray-900 dark:text-gray-300 px-2 py-2 md:p-0 mx-5 md:mx-6 md:pb-1 hover:text-gray-700 "><span
+                                    class="fill-current text-gray-900 dark:text-gray-300 mr-2 ml-auto "><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22 18.055v2.458C22 22.438 17.345 24 12 24c-5.344 0-10-1.562-10-3.487v-2.458c2.418 1.738 7.005 2.256 10 2.256 3.006 0 7.588-.523 10-2.256zm-10-3.409c-3.006 0-7.588-.523-10-2.256v2.434c0 1.926 4.656 3.487 10 3.487 5.345 0 10-1.562 10-3.487V12.39c-2.418 1.738-7.005 2.256-10 2.256zM12 0C6.656 0 2 1.562 2 3.488s4.656 3.487 10 3.487c5.345 0 10-1.562 10-3.487C22 1.562 17.345 0 12 0zm0 8.975c-3.006 0-7.588-.523-10-2.256v2.44c0 1.926 4.656 3.487 10 3.487 5.345 0 10-1.562 10-3.487v-2.44c-2.418 1.738-7.005 2.256-10 2.256z">
+                                        </path>
+                                    </svg></span><span>Contribute Verified Data</span></a></div>
+                        <div class="flex items-center mx-4 mb-1"><select
+                                class="cursor-pointer font-semibold text-sm rounded shadow h-8 dark:bg-gray-1000 px-3 text-center dark:text-white appearance-none ">
+                                <option selected="" value="EN">English</option>
+                                <option value="HI">हिंदी</option>
+                                <option value="MR">मराठी</option>
+                                <option value="TA">தமிழ்</option>
+                                <option value="TE">తెలుగు</option>
+                                <option value="BA">বাংলা</option>
+                                <option value="PA">ਪੰਜਾਬੀ</option>
+                                <option value="GU">ગુજરાતી</option>
+                                <option value="KN">ಕನ್ನಡ</option>
+                                <option value="MA">മലയാളം</option>
+                                <option value="UR">اردو</option>
+                            </select></div>
+                        <div class="flex items-center mx-4 mb-1"><span
+                                class="cursor-pointer flex items-center justify-center h-10 w-10 bg-gray-300 text-gray-900 dark:bg-gray-1000 z-50 rounded-full"><svg
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun"
+                                    class="svg-inline--fa fa-sun fa-w-16 w-6 dark:text-gray-300" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
+                                    </path>
+                                </svg></span></div>
+                    </div>
+                </nav>
+            </section>
+            <div class="pb-6 flex-1">
+                <div>
+                    <section class="flex max-w-5xl mx-auto flex-col items-center mt-5">
+                        <div class="mt-5 flex flex-col items-center transition-height duration-300 h-40"><svg
+                                viewBox="0 0 399 399" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" width="100">
+                                <path fill="none" d="M0 0h398.519v398.519H0z"></path>
+                                <path
+                                    d="M313.973 218.967v-46.068c0-11.041 6.897-16.662 14.224-16.662 7.255 0 14.438 5.492 14.438 16.676v58.586c0 11.413-1.032 16.905-8.23 29.996-11.37 20.661-32.118 54.586-32.118 95.493h-71.734s-8.015-25.221-10.94-42.183c-5.893-34.083 1.806-49.769 15.901-64.308 14.654-15.098 21.909-22.238 28.619-29.178 15.5-16.073 36.591 2.782 24.289 17.521-6.71 8.044-23.285 25.852-27.257 31.129-3.843 5.104 3.312 12.288 8.947 6.409 8.216-8.589 27.315-29.867 33.91-37.538 6.352-7.413 9.951-11.886 9.951-19.873zm-229.441 0v-46.068c0-11.041-6.854-16.662-14.181-16.662-7.241 0-14.467 5.492-14.467 16.676v58.586c0 11.413 1.032 16.905 8.23 29.996 11.37 20.661 32.146 49.625 32.146 95.493h71.735s8.015-25.221 10.94-42.183c5.893-34.083-1.807-49.769-15.901-64.308-14.654-15.098-21.909-22.238-28.619-29.178-15.5-16.073-36.592 2.782-24.289 17.521 6.71 8.044 23.285 25.852 27.257 31.129 3.842 5.104-3.313 12.288-8.947 6.409-8.216-8.589-27.315-29.867-33.91-37.538-6.352-7.413-9.994-11.886-9.994-19.873zm114.72-177.436c-34.928 51.604-57.353 83.879-57.353 115.237 0 31.401 25.651 56.823 57.353 56.823s57.353-25.422 57.353-56.823c0-31.358-22.425-63.633-57.353-115.237zm-.2 36.706c3.369 5.191 7.369 14.252 7.369 23.802 0 28.017-28.676 32.605-28.676 15.557 0-11.715 14.252-28.992 21.307-39.359z"
+                                    fill="none" class="stroke-current text-gray-900 dark:text-gray-50"
+                                    stroke-width="9.5"></path>
+                            </svg>
+                            <h1 class="mt-1 font-black text-6xl text-gray-900 dark:text-gray-100">Injektors</h1>
+                             
+                        <div class="w-full md:w-3/4 px-2">
+                            <div class="m-5">
+                                <div class="flex items-center justify-around flex-wrap my-2 font-semibold">
+                                    <div
+                                        class="cursor-pointer dark:text-gray-500 px-2 pt-1 border-primary-600 pb-1 text-center border-b-2 dark:text-primary-500 text-indigo-800">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="lungs-virus"
+                                            class="svg-inline--fa fa-lungs-virus fa-w-20 w-2 mr-1" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path fill="currentColor"
+                                                d="M344,150.68V16A16,16,0,0,0,328,0H312a16,16,0,0,0-16,16V150.68a46.45,46.45,0,0,1,48,0ZM195.54,444.46a48.06,48.06,0,0,1,0-67.88l8.58-8.58H192a48,48,0,0,1,0-96h12.12l-8.58-8.57a48,48,0,0,1,60.46-74V161.75C256,125.38,224.62,96,186,96c-44,0-58,28.5-80.12,63.13a819.52,819.52,0,0,0-102,231A113.16,113.16,0,0,0,0,419.75C0,481,62.5,525.26,125.25,508.38l59.5-15.87a98.51,98.51,0,0,0,52.5-34.75,46.49,46.49,0,0,1-41.71-13.3Zm226.29-22.63a16,16,0,0,0,0-22.62l-8.58-8.58C393.09,370.47,407.37,336,435.88,336H448a16,16,0,0,0,0-32H435.88c-28.51,0-42.79-34.47-22.63-54.62l8.58-8.58a16,16,0,0,0-22.63-22.63l-8.57,8.58C370.47,246.91,336,232.63,336,204.12V192a16,16,0,0,0-32,0v12.12c0,28.51-34.47,42.79-54.63,22.63l-8.57-8.58a16,16,0,0,0-22.63,22.63l8.58,8.58c20.16,20.15,5.88,54.62-22.63,54.62H192a16,16,0,0,0,0,32h12.12c28.51,0,42.79,34.47,22.63,54.63l-8.58,8.58a16,16,0,1,0,22.63,22.62l8.57-8.57C269.53,393.1,304,407.38,304,435.88V448a16,16,0,0,0,32,0V435.88c0-28.5,34.47-42.78,54.63-22.62l8.57,8.57a16,16,0,0,0,22.63,0ZM288,304a16,16,0,1,1,16-16A16,16,0,0,1,288,304Zm64,64a16,16,0,1,1,16-16A16,16,0,0,1,352,368Zm284.12,22.13a819.52,819.52,0,0,0-102-231C512,124.5,498,96,454,96c-38.62,0-70,29.38-70,65.75v27.72a48,48,0,0,1,60.46,74L435.88,272H448a48,48,0,0,1,0,96H435.88l8.58,8.58a47.7,47.7,0,0,1-41.71,81.18,98.51,98.51,0,0,0,52.5,34.75l59.5,15.87C577.5,525.26,640,481,640,419.75A113.16,113.16,0,0,0,636.12,390.13Z">
+                                            </path>
+                                        </svg><span>Oxygen</span></div>
+                                    <div
+                                        class="cursor-pointer dark:text-gray-500 px-2 pt-1 border-primary-600 pb-1 text-center">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="capsules"
+                                            class="svg-inline--fa fa-capsules fa-w-18 w-2 mr-1" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path fill="currentColor"
+                                                d="M555.3 300.1L424.2 112.8C401.9 81 366.4 64 330.4 64c-22.6 0-45.5 6.7-65.5 20.7-19.7 13.8-33.7 32.8-41.5 53.8C220.5 79.2 172 32 112 32 50.1 32 0 82.1 0 144v224c0 61.9 50.1 112 112 112s112-50.1 112-112V218.9c3.3 8.6 7.3 17.1 12.8 25L368 431.2c22.2 31.8 57.7 48.8 93.8 48.8 22.7 0 45.5-6.7 65.5-20.7 51.7-36.2 64.2-107.5 28-159.2zM160 256H64V144c0-26.5 21.5-48 48-48s48 21.5 48 48v112zm194.8 44.9l-65.6-93.7c-7.7-11-10.7-24.4-8.3-37.6 2.3-13.2 9.7-24.8 20.7-32.5 8.5-6 18.5-9.1 28.8-9.1 16.5 0 31.9 8 41.3 21.5l65.6 93.7-82.5 57.7z">
+                                            </path>
+                                        </svg><span>Medicine</span></div>
+                                    <div
+                                        class="cursor-pointer dark:text-gray-500 px-2 pt-1 border-primary-600 pb-1 text-center">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hospital"
+                                            class="svg-inline--fa fa-hospital fa-w-14 w-2 mr-1" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M448 492v20H0v-20c0-6.627 5.373-12 12-12h20V120c0-13.255 10.745-24 24-24h88V24c0-13.255 10.745-24 24-24h112c13.255 0 24 10.745 24 24v72h88c13.255 0 24 10.745 24 24v360h20c6.627 0 12 5.373 12 12zM308 192h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12zm-168 64h40c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12zm104 128h-40c-6.627 0-12 5.373-12 12v84h64v-84c0-6.627-5.373-12-12-12zm64-96h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12zm-116 12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-40zM182 96h26v26a6 6 0 0 0 6 6h20a6 6 0 0 0 6-6V96h26a6 6 0 0 0 6-6V70a6 6 0 0 0-6-6h-26V38a6 6 0 0 0-6-6h-20a6 6 0 0 0-6 6v26h-26a6 6 0 0 0-6 6v20a6 6 0 0 0 6 6z">
+                                            </path>
+                                        </svg><span>Hospital</span></div>
+                                    <div
+                                        class="cursor-pointer dark:text-gray-500 px-2 pt-1 border-primary-600 pb-1 text-center">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="ambulance" class="svg-inline--fa fa-ambulance fa-w-20 w-2 mr-1"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path fill="currentColor"
+                                                d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm144-248c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8v48zm176 248c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z">
+                                            </path>
+                                        </svg><span>Ambulance</span></div>
+                                    <div
+                                        class="cursor-pointer dark:text-gray-500 px-2 pt-1 border-primary-600 pb-1 text-center">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="phone-alt" class="svg-inline--fa fa-phone-alt fa-w-16 w-2 mr-1"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z">
+                                            </path>
+                                        </svg><span>Helpline</span></div>
+                                    <div
+                                        class="cursor-pointer dark:text-gray-500 px-2 pt-1 border-primary-600 pb-1 text-center">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="carrot"
+                                            class="svg-inline--fa fa-carrot fa-w-16 w-2 mr-1" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                d="M298.2 156.6c-52.7-25.7-114.5-10.5-150.2 32.8l55.2 55.2c6.3 6.3 6.3 16.4 0 22.6-3.1 3.1-7.2 4.7-11.3 4.7s-8.2-1.6-11.3-4.7L130.4 217 2.3 479.7c-2.9 6-3.1 13.3 0 19.7 5.4 11.1 18.9 15.7 30 10.3l133.6-65.2-49.2-49.2c-6.3-6.2-6.3-16.4 0-22.6 6.3-6.2 16.4-6.2 22.6 0l57 57 102-49.8c24-11.7 44.5-31.3 57.1-57.1 30.1-61.7 4.5-136.1-57.2-166.2zm92.1-34.9C409.8 81 399.7 32.9 360 0c-50.3 41.7-52.5 107.5-7.9 151.9l8 8c44.4 44.6 110.3 42.4 151.9-7.9-32.9-39.7-81-49.8-121.7-30.3z">
+                                            </path>
+                                        </svg><span>Food</span></div>
+                                </div>
+                                <div class="my-2 relative w-full false"><input type="text" readonly=""
+                                        class="p-4 pl-6 text-base bg-white dark:bg-gray-1000 md:text-xl placeholder-gray-600 rounded-xl outline-none w-full z-0" /><input
+                                        type="text" id="searchField" autoComplete="off" value=""
+                                        class="p-4 pl-6 text-base md:text-xl transition-shadow duration-300 ease-in-out shadow-md hover:shadow-lg focus:shadow-xl placeholder-gray-600 dark:text-white rounded-xl z-10 outline-none w-full absolute top-0 left-0 bg-transparent"
+                                        placeholder="Search for Oxygen in States or Districts" />
+                                    <div
+                                        class="text-xs ml-1 mt-2 text-gray-500 dark:text-gray-600 flex items-center justify-between">
+                                        <span class="flex items-center"><svg width="15" height="15" viewBox="0 0 44 44"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="stroke-current text-indigo-700 dark:text-gray-300">
+                                                <g fill="none" fill-rule="evenodd" stroke-width="2">
+                                                    <circle cx="22" cy="22" r="1">
+                                                        <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20"
+                                                            calcMode="spline" keyTimes="0; 1"
+                                                            keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite">
+                                                        </animate>
+                                                        <animate attributeName="stroke-opacity" begin="0s" dur="1.8s"
+                                                            values="1; 0" calcMode="spline" keyTimes="0; 1"
+                                                            keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite">
+                                                        </animate>
+                                                    </circle>
+                                                    <circle cx="22" cy="22" r="1">
+                                                        <animate attributeName="r" begin="-0.9s" dur="1.8s"
+                                                            values="1; 20" calcMode="spline" keyTimes="0; 1"
+                                                            keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite">
+                                                        </animate>
+                                                        <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s"
+                                                            values="1; 0" calcMode="spline" keyTimes="0; 1"
+                                                            keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite">
+                                                        </animate>
+                                                    </circle>
+                                                </g>
+                                            </svg><span class="ml-2">Type a city name to see Real Time Tweets Below
+                                            </span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-evenly mt-6 "><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Andaman
+                                and Nicobar Islands (UT)</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Andhra
+                                Pradesh</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Arunachal
+                                Pradesh</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Assam</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Bihar</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Chandigarh
+                                (UT)</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Chhattisgarh</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Dadra
+                                and Nagar Haveli and Daman &amp; Diu (UT)</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Delhi
+                                (NCT)</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Goa</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Gujarat</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Haryana</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Himachal
+                                Pradesh</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Jammu
+                                &amp; Kashmir (UT)</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Jharkhand</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Karnataka</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Kerala</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Ladakh
+                                (UT)</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Madhya
+                                Pradesh</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Maharashtra</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Manipur</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Meghalaya</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Mizoram</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Nagaland</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Odisha</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Puducherry
+                                (UT)</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Punjab</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Rajasthan</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Sikkim</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Tamil
+                                Nadu</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Telangana</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Tripura</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Uttar
+                                Pradesh</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">Uttarakhand</span><span
+                                class="p-2 text-sm md:text-md font-normal cursor-pointer hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 h-10">West
+                                Bengal</span></div>
+                        <div class="flex flex-wrap justify-around space-x-3"><a
+                                href="https://www.covid19india.org/"><button type="button"
+                                    class="inline-flex items-center px-3 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md dark:text-white text-black dark:bg-gray-1000 bg-white hover:opacity-60 focus:outline-none mt-3"><svg
+                                        aria-labelledby="svg-inline--fa-title-myqtUO6Z0aAn" data-prefix="fas"
+                                        data-icon="chart-bar"
+                                        class="svg-inline--fa fa-chart-bar fa-w-16 text-white-400 w-4 mr-4" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <title id="svg-inline--fa-title-myqtUO6Z0aAn">Covid 19 Statistics</title>
+                                        <path fill="currentColor"
+                                            d="M332.8 320h38.4c6.4 0 12.8-6.4 12.8-12.8V172.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V76.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-288 0h38.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zM496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z">
+                                        </path>
+                                    </svg>Covid19 Statistics</button></a><a
+                                href="https://charts.mongodb.com/charts-swasth-deman-data-aobsf/public/dashboards/608a951e-5a65-4419-843d-d193674b3673"><button
+                                    type="button"
+                                    class="inline-flex items-center px-3 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md dark:text-white text-black dark:bg-gray-1000 bg-white hover:opacity-60 focus:outline-none mt-3"><svg
+                                        aria-labelledby="svg-inline--fa-title-SwNYMe8mepfw" data-prefix="fas"
+                                        data-icon="medkit"
+                                        class="svg-inline--fa fa-medkit fa-w-16 text-white-400 w-4 mr-4" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <title id="svg-inline--fa-title-SwNYMe8mepfw">Covid 19 Statistics</title>
+                                        <path fill="currentColor"
+                                            d="M96 480h320V128h-32V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H96v352zm96-384h128v32H192V96zm320 80v256c0 26.51-21.49 48-48 48h-16V128h16c26.51 0 48 21.49 48 48zM64 480H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v352zm288-208v32c0 8.837-7.163 16-16 16h-48v48c0 8.837-7.163 16-16 16h-32c-8.837 0-16-7.163-16-16v-48h-48c-8.837 0-16-7.163-16-16v-32c0-8.837 7.163-16 16-16h48v-48c0-8.837 7.163-16 16-16h32c8.837 0 16 7.163 16 16v48h48c8.837 0 16 7.163 16 16z">
+                                        </path>
+                                    </svg>Oxygen Concentration Requirements</button></a><a
+                                href="https://docs.google.com/spreadsheets/d/1BEXdf68gxsYsp3Hsc0gUEPbH_wx0kSbu/edit#gid=438108583"><button
+                                    type="button"
+                                    class="inline-flex items-center px-3 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md dark:text-white text-black dark:bg-gray-1000 bg-white hover:opacity-60 focus:outline-none mt-3"><svg
+                                        aria-labelledby="svg-inline--fa-title-KPeN8Pj6jlDv" data-prefix="fas"
+                                        data-icon="building"
+                                        class="svg-inline--fa fa-building fa-w-14 text-white-400 w-4 mr-4" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <title id="svg-inline--fa-title-KPeN8Pj6jlDv">FDA Officers Contact</title>
+                                        <path fill="currentColor"
+                                            d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z">
+                                        </path>
+                                    </svg>FDA Officers Contact</button></a></div>
+                        <div class="mx-3 flex space-x-3">
+                            <div
+                                class="inline-flex items-center px-3 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md dark:text-white text-black dark:bg-gray-1000 bg-white  mt-6">
+                                <svg aria-labelledby="svg-inline--fa-title-ZxjcOxSWeFjX" data-prefix="fas"
+                                    data-icon="medkit" class="svg-inline--fa fa-medkit fa-w-16 text-white-400 w-4 mr-4"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <title id="svg-inline--fa-title-ZxjcOxSWeFjX">Covid 19 Statistics</title>
+                                    <path fill="currentColor"
+                                        d="M96 480h320V128h-32V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H96v352zm96-384h128v32H192V96zm320 80v256c0 26.51-21.49 48-48 48h-16V128h16c26.51 0 48 21.49 48 48zM64 480H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v352zm288-208v32c0 8.837-7.163 16-16 16h-48v48c0 8.837-7.163 16-16 16h-32c-8.837 0-16-7.163-16-16v-48h-48c-8.837 0-16-7.163-16-16v-32c0-8.837 7.163-16 16-16h48v-48c0-8.837 7.163-16 16-16h32c8.837 0 16 7.163 16 16v48h48c8.837 0 16 7.163 16 16z">
+                                    </path>
+                                </svg><span>Total Hospitals
+                                    <!-- --> :
+                                    <!-- -->1309
+                                </span><span class="mx-1"> (
+                                    <!-- -->Verified
+                                    <!-- -->:
+                                    <!-- -->905
+                                    <!-- -->)
+                                </span><span>|
+                                    <!-- -->Total Ambulance
+                                    <!-- --> :
+                                    <!-- -->143
+                                </span><span class="mx-1"> (
+                                    <!-- -->Verified
+                                    <!-- -->:
+                                    <!-- -->56
+                                    <!-- -->)
+                                </span></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="bg-gray-200 dark:bg-gray-1200 w-full flex-shrink-0 pt-6 pb-2">
+                <section class="flex flex-wrap justify-center my-3 text-sm">
+                    <div class="flex items-center mr-2 text-gray-900 dark:text-gray-500"><span
+                            class="font-semibold mr-2">Disclaimer
+                            <!-- -->:
+                        </span><span class="">Data is not owned or created by us</span></div>
+                    <div><a href="/disclaimer" class="font-semibold text-indigo-500 underline">Know More</a></div>
+                </section>
+        
+            </footer>
+        </div>
+    </div>
+    
+    </body>
+
+</html>
+
+
+
+
+
+
+
+ 
