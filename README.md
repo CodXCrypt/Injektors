@@ -3,6 +3,4 @@ An open-source website is full of resources for oxygen cylinders, plasma donors,
 
 # Tech Stacks used 
 React js, node js, MongoDB 
-
-
 Backend - Djang0
